@@ -16,15 +16,15 @@ centerDistance = 60 # mm
 idealPitchDiameter = (2 * centerDistance ) - pitchDiameter1
 idealPitchDiameter /= 2
 
-print("number of teeth on gear 1:")
 numberOfTeeth1 = pitchDiameter1 / module
-print(numberOfTeeth1)
+print("number of teeth on gear 1:", numberOfTeeth1)
 
 # print(pitchDiameter2)
 
-print("ideal number of teeth on gear 2:")
 numberOfTeeth2 = idealPitchDiameter / module
-print(numberOfTeeth2)
+print("ideal number of teeth on gear 2:", numberOfTeeth2)
+
+print("the ratio of gear 1 to gear 2 is:", int(numberOfTeeth1 / numberOfTeeth2), ": 1")
 
 
 # print(centerDistance)
