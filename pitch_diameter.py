@@ -12,15 +12,19 @@ pitchDiameter2 = module * numberOfTeeth2
 
 # centerDistance = (pitchDiameter1 + pitchDiameter2) / 2
 
-centerDistance = 60
+centerDistance = 60 # mm
 idealPitchDiameter = (2 * centerDistance ) - pitchDiameter1
 idealPitchDiameter /= 2
 
-print("Pitch Diameter 1:")
-print(pitchDiameter1)
+print("number of teeth on gear 1:")
+numberOfTeeth1 = pitchDiameter1 / module
+print(numberOfTeeth1)
+
 # print(pitchDiameter2)
 
-print("ideal pitch diameter 2:")
-print(idealPitchDiameter)
+print("ideal number of teeth on gear 2:")
+numberOfTeeth2 = idealPitchDiameter / module
+print(numberOfTeeth2)
+
 
 # print(centerDistance)
